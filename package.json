@@ -1,0 +1,23 @@
+{
+  "name": "WEB_LAB07",
+  "version": "1.0.0",
+  "description": "Using webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DiaZa13/WEB_LAB07.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DiaZa13/WEB_LAB07/issues"
+  },
+  "homepage": "https://github.com/DiaZa13/WEB_LAB07#readme",
+  "dependencies": {
+    "webpack": "^5.23.0"
+  }
+}
