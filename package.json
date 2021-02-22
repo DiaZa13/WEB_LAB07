@@ -18,6 +18,11 @@
   },
   "homepage": "https://github.com/DiaZa13/WEB_LAB07#readme",
   "dependencies": {
-    "webpack": "^5.23.0"
+    "webpack": "^5.23.0",
+    "webpack-cli": "^4.5.0",
+    "bootstrap": "^4.6.0",
+    "css-loader": "^5.0.2",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0"
   }
 }
