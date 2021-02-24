@@ -1,3 +1,8 @@
+/******/ (() => { // webpackBootstrap
+var __webpack_exports__ = {};
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
 
 
 function addImg(pag, ref, id, img, alt){
@@ -38,3 +43,6 @@ addImg('pag6','pag6.html','uxDesign','media/img/uxDesign.png','UX Design');
 
 document.body.appendChild(audio);
 document.body.appendChild(figure_element);
+
+/******/ })()
+;
