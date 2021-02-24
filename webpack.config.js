@@ -1,22 +1,38 @@
 //CONFIGURACION WEBPACK
-const path = require("path");
-const miniCssExtractPlugin = require('mini-css-extract-plugin');
+const path = require('path');
+const miniCssExtractplugin = require('mini-css-extract-plugin');
+const htmlWebpackplugin = require('html-webpack-plugin');
 
 module.exports = {
-    mode: "development",
+    mode: 'development',
     devtool:false,
-    entry: "./src/index.js",
+    entry: {
+        index: './src/index.js',
+        pag1: './src/pag1.js'
+    },
     output: {
-        filename: "main.js",
+        filename: "[name].bundle.js",
         path: path.resolve(__dirname, "dist"),
     },
     //plugin
-    plugins: [new miniCssExtractPlugin({ filename: "main.css" })],
+    plugins: [
+        new miniCssExtractplugin({ filename: "[name].bundle.css" }),
+        new htmlWebpackplugin({
+            template: "./src/index.html",
+            filename: "index.html",
+            chunks:["index"]
+        }),
+        new htmlWebpackplugin({
+            template: "./src/pag1.html",
+            filename: "pag1.html",
+            chunks:["pag1"]
+        }),
+    ],
     module:{
         rules: [
             {
                 test: /\.scss$/,
-                use: [miniCssExtractPlugin.loader,'css-loader','sass-loader'],
+                use: [miniCssExtractplugin.loader,'css-loader','sass-loader'],
             },
         ],
     },
