@@ -1,5 +1,6 @@
 //CONFIGURACION WEBPACK
 const path = require("path");
+const miniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     mode: "development",
@@ -10,4 +11,13 @@ module.exports = {
         path: path.resolve(__dirname, "dist"),
     },
     //plugin
+    plugins: [new miniCssExtractPlugin({ filename: "main.css" })],
+    module:{
+        rules: [
+            {
+                test: /\.scss$/,
+                use: [miniCssExtractPlugin.loader,'css-loader','sass-loader'],
+            },
+        ],
+    },
 };
