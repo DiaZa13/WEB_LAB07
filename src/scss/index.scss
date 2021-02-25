@@ -1,20 +1,40 @@
 
 @import "~bootstrap/scss/bootstrap";
-/*COLORES*/
-$index: #B4B4B4;/*same as pag5*/
-$pag1: #C9D3E7;/*same as pag7*/
-$pag2: #9CA9B1;/*same as pag8*/
-$pag3: #E5E1E0;/*same as pag9*/
-$pag4: #CFE7EA;
-$pag6: #28364A;
+@import "./variables.scss";
+/* Animate.css*/
+@import "~animate.css/animate.css";
+@import "~animate.css/source/bouncing_entrances/bounceInDown.css";
+@import '~animate.css/source/sliding_entrances/slideInDown';
+
 
 
 body{
-  background-color: #B4B4B4;
-  font-family: Candara,Arial;
   margin: 10px;
 }
 
+.index_background{
+  background-color: $index;
+}
+
+.pag1_background{
+  background-color: $pag1;
+}
+
+.pag2_background{
+  background-color: $pag2;
+}
+
+.pag3_background{
+  background-color: $pag3;
+}
+
+.pag4_background{
+  background-color: $pag4;
+}
+
+.pag6_background{
+  background-color: $pag6;
+}
 
 
 h1{

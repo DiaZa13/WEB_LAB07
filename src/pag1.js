@@ -1,4 +1,4 @@
 import {start} from "./js/pag1.js";
-import "./scss/pag1.scss"
+import "./scss/index.scss"
 
 start();
