@@ -1,5 +1,13 @@
 
 @import "~bootstrap/scss/bootstrap";
+/*COLORES*/
+$index: #B4B4B4;/*same as pag5*/
+$pag1: #C9D3E7;/*same as pag7*/
+$pag2: #9CA9B1;/*same as pag8*/
+$pag3: #E5E1E0;/*same as pag9*/
+$pag4: #CFE7EA;
+$pag6: #28364A;
+
 
 body{
   background-color: #B4B4B4;
@@ -7,14 +15,12 @@ body{
   margin: 10px;
 }
 
+
+
 h1{
   text-align: center;
 }
 
 img{
   width: 250px;
-}
-
-.container{
-  margin: 10px;
 }

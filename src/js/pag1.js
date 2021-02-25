@@ -18,7 +18,7 @@ allStar.setAttribute('src','../media/audio/oneMoreLight.mp3');
 audio.appendChild(allStar);
 
 function start(){
-    addImg('index','../index.html','index','img.cover.png','Cover');
+    addImg('index','index.html','index','img.cover.png','Cover');
     addImg('pag7','pag7.html','pag7','img/nextDisaster.png','Next Disaster');
     document.body.appendChild(audio);
 }

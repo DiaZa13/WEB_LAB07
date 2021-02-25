@@ -1,15 +1,15 @@
 
 //Image as a link
-function addImg(pag, ref, id, img, alt){
-    let page = document.getElementById(pag);
+function addImg(container, page, id, img, alt){
+    let element = document.getElementById(container);
     let link = document.createElement('a');
-    link.setAttribute('href',ref);
+    link.setAttribute('href',page);
     let image = document.createElement('img');
     image.setAttribute('id',id);
     image.setAttribute('src',img);
     image.setAttribute('alt',alt);
     link.appendChild(image);
-    page.appendChild(link);
+    element.appendChild(link);
 }
 
 
