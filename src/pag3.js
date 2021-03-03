@@ -1,4 +1,6 @@
-import {start} from "./js/pag3.js";
-import "./scss/pag3.scss"
+import '@fortawesome/fontawesome-free/js/all.js';
+import {createNabvar} from "./js/navBar.js";
+import "./scss/index.scss"
 
-start();
+
+createNabvar();

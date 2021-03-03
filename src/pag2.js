@@ -1,4 +1,5 @@
-import {start} from "./js/pag2.js";
-import "./scss/pag2.scss"
+import {createNabvar} from "./js/navBar.js";
+import "./scss/index.scss"
 
-start();
+
+createNabvar();

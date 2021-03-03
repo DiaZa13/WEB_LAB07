@@ -1,11 +1,12 @@
 
-@import "~bootstrap/scss/bootstrap";
 @import "./variables.scss";
+@import "~bootstrap/scss/bootstrap";
 /* Animate.css*/
 @import "~animate.css/animate.css";
 @import "~animate.css/source/bouncing_entrances/bounceInDown.css";
 @import '~animate.css/source/sliding_entrances/slideInDown';
-
+@import '~animate.css/source/attention_seekers/heartBeat.css';
+@import '~animate.css/source/fading_entrances/fadeInLeft.css';
 
 
 body{
@@ -44,3 +45,87 @@ h1{
 img{
   width: 250px;
 }
+
+nav{
+  .sidebar{
+    width: 40px;
+    background: rgba(250, 250, 250, 0.5);
+    position: fixed;
+    top: 50%;
+    left: 1vw;
+    height: 100vh;
+    transform: translate(-10px, -50%);
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    ul{
+      list-style: none;
+      padding: 0px;
+      margin: 0px;
+      li{
+        margin-top: 65px;
+      }
+    }
+  }
+}
+
+.indicator span{
+  width: 20px;
+  height: 20px;
+  background: rgba(0, 0, 0, 0.9);
+  display: block;
+  &:hover {
+    background: rgba(250, 250, 250, 0.5);
+    border: 1px solid #000;
+  }
+}
+
+.chapter{
+  position: absolute;
+  top: 31.6%;
+  left: 110%;
+  width: 150px;
+  height: 25px;
+  color: #000;
+  font-family: Bahnschrift;
+  font-size: large;
+  //background-color: #fff;
+}
+
+@mixin imgConfig($width, $height){
+  width: $width;
+  height: $height;
+  z-index: -1;
+}
+
+@mixin bckConfig($translate, $width){
+  transform: translateY($translate);
+  padding: 20px;
+  width: $width;
+}
+
+.rightImg{
+  float: right;
+  @include imgConfig(40vw,82vh)
+}
+
+.leftImg{
+  @include imgConfig(90vw,82vh)
+}
+
+.rightBck{
+  @include bckConfig(60px,60%)
+}
+
+.lefBck{
+  float: right;
+  @include bckConfig(-255px,95%)
+}
+
+.border-bottom{
+  //border-width: 3px !important;
+  border-bottom-color: #28364A !important;
+}
+

@@ -7,8 +7,8 @@ module.exports = {
     mode: 'development',
     devtool:false,
     entry: {
-        index: './src/index.js',
-        //pag1: './src/pag1.js'
+        //index: './src/index.js',
+        pag1: './src/pag3.js'
     },
     output: {
         filename: "[name].bundle.js",
@@ -17,16 +17,16 @@ module.exports = {
     //plugin
     plugins: [
         new miniCssExtractplugin({ filename: "index.bundle.css" }),
-        new htmlWebpackplugin({
+      /*  new htmlWebpackplugin({
             template: "./src/index.html",
             filename: "index.html",
             chunks:["index"]
-        }),
-       /* new htmlWebpackplugin({
-            template: "./src/pag1.html",
-            filename: "pag1.html",
-            chunks:["pag1"]
         }),*/
+        new htmlWebpackplugin({
+            template: "./src/pag3.html",
+            filename: "pag3.html",
+            chunks:["pag1"]
+        }),
     ],
     module:{
         rules: [
@@ -35,12 +35,11 @@ module.exports = {
                 use: [miniCssExtractplugin.loader,'css-loader','sass-loader'],
             },
             {
-                test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+                test: /\.(svg|woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
                 use: [
                     {
                         loader: 'file-loader',
                         options: {
-                            name: '[name].[ext]',
                             outputPath: 'fonts'
                         }
                     }
