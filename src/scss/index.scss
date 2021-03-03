@@ -9,31 +9,12 @@
 @import '~animate.css/source/fading_entrances/fadeInLeft.css';
 @import "~animate.css/source/flippers/flipInX.css";
 
+
 body{
   margin: 10px;
   font-size: 20px;
+  background-color: $secondary;
 }
-
-.pag1_background{
-  background-color: $pag1;
-}
-
-.pag2_background{
-  background-color: $pag2;
-}
-
-.pag3_background{
-  background-color: $pag3;
-}
-
-.pag4_background{
-  background-color: $pag4;
-}
-
-.pag6_background{
-  background-color: $pag6;
-}
-
 
 h1{
   text-align: center;
@@ -41,7 +22,9 @@ h1{
 
 img{
   width: 95%;
+
 }
+
 
 nav{
   .sidebar{
@@ -87,44 +70,17 @@ nav{
   left: 99%;
   width: 150px;
   height: 25px;
-  font-family: Bahnschrift;
   font-size: large;
-}
-
-@mixin imgConfig($width, $height){
-  width: $width;
-  height: $height;
-  z-index: -1;
-}
-
-@mixin bckConfig($translate, $width){
-  transform: translateY($translate);
-  padding: 20px;
-  width: $width;
-}
-
-.rightImg{
-  float: right;
-  @include imgConfig(40vw,70vh)
-}
-
-.leftImg{
-  @include imgConfig(90vw,82vh)
-}
-
-.rightBck{
-  @include bckConfig(60px,60%)
-}
-
-.lefBck{
-  float: right;
-  @include bckConfig(-255px,95%)
 }
 
 .split{
   opacity: 1;
   filter: blur(0px);
   transition: opacity 500ms;
+}
+
+.border-bottom{
+  border-bottom-color: $primary !important;
 }
 
 

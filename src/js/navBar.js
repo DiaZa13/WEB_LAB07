@@ -14,7 +14,7 @@ function navbarBasicitem(href, name){
 
 export function createNabvar (){
     let navBar = document.getElementById('navBar');
-    navBar.classList.add('navbar','navbar-expand-md','navbar-light');
+    navBar.classList.add('navbar','navbar-expand-md', 'navbar-light');
     let home = document.createElement('a');
     home.classList.add('navbar-brand');
     let circle = document.createElement('div');
@@ -44,9 +44,6 @@ export function createNabvar (){
     navbarItems.classList.add('collapse','navbar-collapse');
     let ulNavbaritems = document.createElement('ul');
     ulNavbaritems.classList.add('navbar-nav','ml-auto');
-    ulNavbaritems.appendChild(navbarBasicitem('#','CHAPTER ONE'));
-    ulNavbaritems.appendChild(navbarBasicitem('#','CHAPTER TWO'));
-    ulNavbaritems.appendChild(navbarBasicitem('#','CHAPTER THREE'));
     //Song navbar item
     let specialNavbaritem = document.createElement('li');
     specialNavbaritem.classList.add('nav-item','dropdown');
@@ -75,6 +72,10 @@ export function createNabvar (){
     ddmItems.appendChild(s2);
     specialNavbaritem.appendChild(ddmItems);
     ulNavbaritems.appendChild(specialNavbaritem);
+    ulNavbaritems.appendChild(navbarBasicitem('pag1.html','CHAPTER ONE'));
+    ulNavbaritems.appendChild(navbarBasicitem('pag2.html#','CHAPTER TWO'));
+    ulNavbaritems.appendChild(navbarBasicitem('pag3.html','CHAPTER THREE'));
+
     navbarItems.appendChild(ulNavbaritems);
     navBar.appendChild(navbarItems);
 }

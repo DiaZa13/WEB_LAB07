@@ -1,16 +1,14 @@
 
-/* Colors */
-$index: #EDEAE3;/*same as pag5*/
-$pag1: #f4eeed ;/*same as pag7*/
-$pag2: #9CA9B1;/*same as pag8*/
-$pag3: #E5E1E0;/*same as pag9*/
-$pag4: #CFE7EA;
-$pag6: #28364A;
+@import url('https://fonts.googleapis.com/css?family=Cormorant');
+@import url('https://fonts.googleapis.com/css?family=Cormorant Upright');
+
 
 /* Typography */
-$font-family-base: Candara,Arial;
-$headings-font-family: Bahnschrift;
+$font-family-base: Cormorant Upright,Candara;
+$headings-font-family: Cormorant;
 $border-width: 2px;
+$primary: #1F1E2C;
+$secondary: #F4EEED;
 $theme-colors: (
         "primary": #1F1E2C,
         "secondary": #F4EEED
@@ -25,7 +23,3 @@ $display-font-sizes: (
         6: 2.5rem
 );
 
-$display-font-weight: 300;
-//$display-line-height: $headings-line-height;
-
-/* COLOR #f4eeed #1f1e2c*/
