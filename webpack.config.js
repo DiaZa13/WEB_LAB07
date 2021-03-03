@@ -7,8 +7,8 @@ module.exports = {
     mode: 'development',
     devtool:false,
     entry: {
-        //index: './src/index.js',
-        pag1: './src/pag1.js'
+        index: './src/index.js',
+        //pag1: './src/pag1.js'
     },
     output: {
         filename: "[name].bundle.js",
@@ -17,16 +17,16 @@ module.exports = {
     //plugin
     plugins: [
         new miniCssExtractplugin({ filename: "index.bundle.css" }),
-      /*new htmlWebpackplugin({
+      new htmlWebpackplugin({
             template: "./src/index.html",
             filename: "index.html",
             chunks:["index"]
-        }),*/
-        new htmlWebpackplugin({
+        }),
+        /*new htmlWebpackplugin({
             template: "./src/pag1.html",
             filename: "pag1.html",
             chunks:["pag1"]
-        }),
+        }),*/
     ],
     module:{
         rules: [
@@ -45,6 +45,18 @@ module.exports = {
                     }
                 ]
             },
+            {
+                test: /\.(svg|png|jpg|gif)$/i,
+                use: {
+                    loader: "file-loader",
+                    options: {
+                        esModule: false,
+                        outputPath: "img",
+                        name: "[name].[ext]",
+                    }
+                }
+            },
+
         ],
     },
 };
