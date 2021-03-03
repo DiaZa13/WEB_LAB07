@@ -1,8 +1,11 @@
 import 'bootstrap/dist/js/bootstrap.js'
 import '@fortawesome/fontawesome-free/js/all.js';
 import "./scss/index.scss";
+import me from './media/img/aboutMe.png';
 import * as media from "./js/media";
 
+
+document.getElementById('aboutMe').src = me;
 
 let chapterOne = document.getElementById('chapterOne');
 let chapterTwo = document.getElementById('chapterTwo');
