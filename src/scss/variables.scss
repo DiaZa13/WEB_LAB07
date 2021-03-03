@@ -10,8 +10,22 @@ $pag6: #28364A;
 /* Typography */
 $font-family-base: Candara,Arial;
 $headings-font-family: Bahnschrift;
-//$font-size-base: 5rem;
-$border-width: 3px;
+$border-width: 2px;
+$theme-colors: (
+        "primary": #1F1E2C,
+        "secondary": #F4EEED
+);
 
+$display-font-sizes: (
+        1: 5rem,
+        2: 4.5rem,
+        3: 4rem,
+        4: 3.5rem,
+        5: 3.2rem,
+        6: 2.5rem
+);
+
+$display-font-weight: 300;
+//$display-line-height: $headings-line-height;
 
 /* COLOR #f4eeed #1f1e2c*/

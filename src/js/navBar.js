@@ -16,8 +16,14 @@ export function createNabvar (){
     let navBar = document.getElementById('navBar');
     navBar.classList.add('navbar','navbar-expand-md','navbar-light');
     let home = document.createElement('a');
-    home.classList.add('nav-item', 'nav-link');
-    home.innerText = 'HOME';
+    home.classList.add('navbar-brand');
+    let circle = document.createElement('div');
+    circle.classList.add('rounded-circle');
+    circle.style.border = '2px solid white';
+    circle.style.width = '75px';
+    circle.style.height = '75px';
+    circle.innerText = 'HOME';
+    home.appendChild(circle);
     navBar.appendChild(home);
     //Dropdown menu
     let dropdownMenu = document.createElement('button');
@@ -38,9 +44,9 @@ export function createNabvar (){
     navbarItems.classList.add('collapse','navbar-collapse');
     let ulNavbaritems = document.createElement('ul');
     ulNavbaritems.classList.add('navbar-nav','ml-auto');
-    ulNavbaritems.appendChild(navbarBasicitem('#','Chapter One'));
-    ulNavbaritems.appendChild(navbarBasicitem('#','Chapter Two'));
-    ulNavbaritems.appendChild(navbarBasicitem('#','Chapter Three'));
+    ulNavbaritems.appendChild(navbarBasicitem('#','CHAPTER ONE'));
+    ulNavbaritems.appendChild(navbarBasicitem('#','CHAPTER TWO'));
+    ulNavbaritems.appendChild(navbarBasicitem('#','CHAPTER THREE'));
     //Song navbar item
     let specialNavbaritem = document.createElement('li');
     specialNavbaritem.classList.add('nav-item','dropdown');
@@ -51,7 +57,7 @@ export function createNabvar (){
     specialItemname.setAttribute('data-toggle','dropdown');
     specialItemname.setAttribute('aria-haspopup','true');
     specialItemname.setAttribute('aria-expanded','false');
-    specialItemname.innerText = 'Songs';
+    specialItemname.innerText = 'SONGS';
     specialNavbaritem.appendChild(specialItemname);
     //Songs as items of a dropdown menu
     let ddmItems = document.createElement('div');

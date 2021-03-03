@@ -8,7 +8,7 @@ module.exports = {
     devtool:false,
     entry: {
         //index: './src/index.js',
-        pag1: './src/pag3.js'
+        pag1: './src/pag1.js'
     },
     output: {
         filename: "[name].bundle.js",
@@ -17,14 +17,14 @@ module.exports = {
     //plugin
     plugins: [
         new miniCssExtractplugin({ filename: "index.bundle.css" }),
-      /*  new htmlWebpackplugin({
+      /*new htmlWebpackplugin({
             template: "./src/index.html",
             filename: "index.html",
             chunks:["index"]
         }),*/
         new htmlWebpackplugin({
-            template: "./src/pag3.html",
-            filename: "pag3.html",
+            template: "./src/pag1.html",
+            filename: "pag1.html",
             chunks:["pag1"]
         }),
     ],
