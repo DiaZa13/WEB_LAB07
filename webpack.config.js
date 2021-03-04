@@ -47,6 +47,10 @@ module.exports = {
                 use: [miniCssExtractplugin.loader,'css-loader','sass-loader'],
             },
             {
+                test: /\.css$/i,
+                use: ["style-loader", "css-loader"],
+            },
+            {
                 test: /\.(svg|woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
                 use: [
                     {

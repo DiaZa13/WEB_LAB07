@@ -19,8 +19,8 @@
   },
   "homepage": "https://github.com/DiaZa13/WEB_LAB07#readme",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.2",
     "bootstrap": "^4.6.0",
+    "bootstrap-icons": "^1.4.0",
     "css-loader": "^5.0.2",
     "css-minimizer-webpack-plugin": "^1.2.0",
     "html-webpack-plugin": "^5.2.0",

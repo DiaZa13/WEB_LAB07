@@ -9,10 +9,12 @@
 @import '~animate.css/source/fading_entrances/fadeInLeft.css';
 @import "~animate.css/source/flippers/flipInX.css";
 
+:root{
+  --gutter: 8px;
+}
 
 body{
   margin: 10px;
-  font-size: 20px;
   background-color: $secondary;
 }
 
@@ -25,7 +27,9 @@ img{
 
 }
 
-
+p{
+  line-height: 1.6;
+}
 nav{
   .sidebar{
     width: 50px;
@@ -46,8 +50,9 @@ nav{
       list-style: none;
       padding: 0px;
       margin: 0px;
+      display: grid;
       li{
-        margin-top: 65px;
+        margin: auto;
       }
     }
   }
@@ -66,8 +71,8 @@ nav{
 
 .chapter{
   position: absolute;
-  top: 35.6%;
-  left: 99%;
+  top: 37.6%;
+  left: 100%;
   width: 150px;
   height: 25px;
   font-size: large;
@@ -82,6 +87,39 @@ nav{
 .border-bottom{
   border-bottom-color: $primary !important;
 }
+
+a {
+  padding: 0px var(--gutter);
+}
+
+a:after{
+  display: block;
+  content: "";
+  width: 0;
+  height: 1px;
+  left: var(--gutter);
+  transition: width .6s cubic-bezier(1, 0, 0, 1),background .2s linear;
+}
+
+li{
+  div {
+    a {
+      &:hover {
+        &:after {
+          background: #001425;
+          width: calc(105% - (var(--gutter)));
+        }
+      }
+    }
+  }
+}
+
+.musicIcon{
+  cursor: default;
+  transform: translate(0px, 138px);
+}
+
+
 
 
 
