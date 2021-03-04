@@ -1,4 +1,3 @@
-//import '@fortawesome/fontawesome-free/js/all.js';
 import {createNabvar} from "../../js/navBar";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import "../../scss/index.scss";

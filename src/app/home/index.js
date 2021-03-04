@@ -1,5 +1,4 @@
 import 'bootstrap/dist/js/bootstrap.js'
-import '@fortawesome/fontawesome-free/js/all.js';
 import "../../scss/index.scss";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import * as media from "../../js/media";
