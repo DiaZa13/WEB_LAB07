@@ -4,8 +4,9 @@
   "description": "Using webpack",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack"
+    "babel_start": "babel src --out-dir lib",
+    "start": "webpack",
+    "plugin_parameters": "babel src -d lib --plugins=@babel/plugin-transform-parameters"
   },
   "repository": {
     "type": "git",
@@ -36,6 +37,7 @@
     "webpack-cli": "^4.5.0"
   },
   "devDependencies": {
+    "@babel/plugin-transform-parameters": "^7.13.0",
     "animate.css": "^4.1.1",
     "file-loader": "^6.2.0"
   }
