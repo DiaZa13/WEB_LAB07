@@ -1,7 +1,7 @@
 
 import * as media from "./media.js";
 
-export function menuAnimation(img){
+export let menuAnimation = (img) => {
     let chapterOne = document.getElementById('chapterOne');
     let chapterTwo = document.getElementById('chapterTwo');
     let chapterThree = document.getElementById('chapterThree');

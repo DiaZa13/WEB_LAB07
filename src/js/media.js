@@ -1,6 +1,6 @@
 
 //Background music
-export function bckMusic(element,melody,container){
+export let bckMusic = (element,melody,container) => {
     let sound = false;
     let audio = document.createElement('audio');
     let song = document.createElement('source');
@@ -28,7 +28,7 @@ export function bckMusic(element,melody,container){
     music.appendChild(icon_music);
 }
 
-export function musicInfo(element,img,name,artist){
+export let musicInfo = (element,img,name,artist) => {
     let container = document.getElementById(element);
     container.style.display = 'flex';
     let image = document.createElement('div');
@@ -51,7 +51,7 @@ export function musicInfo(element,img,name,artist){
     container.appendChild(description);
 }
 
-export function menu(element,container){
+export let menu = (element,container) => {
     let music = document.getElementById(element);
     let icon_music = document.getElementById(container);
     icon_music.style.fontSize = '42px';
