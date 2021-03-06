@@ -59,11 +59,3 @@ export function menuAnimation(img){
 function test(x = "hello", { a, b }, ...args) {
     console.log(x, a, b, args);
 }
-
-{
-    function name (n) {
-        return n;
-    }
-}
-
-name("Steve");
