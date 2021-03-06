@@ -45,6 +45,7 @@
     "@babel/plugin-transform-parameters": "^7.13.0",
     "@babel/preset-env": "^7.13.9",
     "animate.css": "^4.1.1",
+    "babel-loader": "^8.2.2",
     "file-loader": "^6.2.0"
   }
 }
