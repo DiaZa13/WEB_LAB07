@@ -1,7 +1,7 @@
 import '../../node_modules/bootstrap/dist/js/bootstrap.js'
 import * as media from "./media.js";
 
-function navbarBasicitem(href, name){
+let basicItem = (href,name) => {
     let item = document.createElement('li');
     item.classList.add('nav-item');
     let div = document.createElement('div');
@@ -109,9 +109,9 @@ export function createNabvar (sng1, sng2, s1Img, s2Img, s1Name, s2Name, s1Artist
     ddmItems.appendChild(s2);
     specialNavbaritem.appendChild(ddmItems);
     ulNavbaritems.appendChild(specialNavbaritem);
-    ulNavbaritems.appendChild(navbarBasicitem('pag1.html','CHAPTER ONE'));
-    ulNavbaritems.appendChild(navbarBasicitem('pag2.html#','CHAPTER TWO'));
-    ulNavbaritems.appendChild(navbarBasicitem('pag3.html','CHAPTER THREE'));
+    ulNavbaritems.appendChild(basicItem('pag1.html','CHAPTER ONE'));
+    ulNavbaritems.appendChild(basicItem('pag2.html#','CHAPTER TWO'));
+    ulNavbaritems.appendChild(basicItem('pag3.html','CHAPTER THREE'));
 
     navbarItems.appendChild(ulNavbaritems);
     navBar.appendChild(navbarItems);

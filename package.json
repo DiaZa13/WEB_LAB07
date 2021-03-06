@@ -6,7 +6,10 @@
   "scripts": {
     "babel_start": "babel src --out-dir lib",
     "start": "webpack",
-    "plugin_parameters": "babel src -d lib --plugins=@babel/plugin-transform-parameters"
+    "plugin_parameters": "babel src -d lib --plugins=@babel/plugin-transform-parameters",
+    "plugin_functions": "babel src -d lib --plugins=@babel/plugin-transform-block-scoped-functions",
+    "puglin_arrow": "babel src -d lib --plugins=@babel/plugin-transform-arrow-functions"
+
   },
   "repository": {
     "type": "git",
@@ -37,6 +40,8 @@
     "webpack-cli": "^4.5.0"
   },
   "devDependencies": {
+    "@babel/plugin-transform-arrow-functions": "^7.13.0",
+    "@babel/plugin-transform-block-scoped-functions": "^7.12.13",
     "@babel/plugin-transform-parameters": "^7.13.0",
     "animate.css": "^4.1.1",
     "file-loader": "^6.2.0"
