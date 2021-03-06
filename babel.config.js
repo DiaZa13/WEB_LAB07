@@ -1,7 +1,8 @@
 const presets = [
     "@babel/preset-env",
     {
-        "useBuiltIns": "entry"//imports only the specific modules required of core-js
+        useBuiltIns: "entry",//imports only the specific modules required of core-js
+        corejs: "3.6.5",
     }];
 const plugins = [
     "@babel/plugin-transform-parameters",

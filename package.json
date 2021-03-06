@@ -24,6 +24,7 @@
   "dependencies": {
     "@babel/cli": "^7.13.0",
     "@babel/core": "^7.13.8",
+    "@babel/polyfill": "^7.12.1",
     "bootstrap": "^4.6.0",
     "bootstrap-icons": "^1.4.0",
     "css-loader": "^5.0.2",
